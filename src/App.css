@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+/* Outer box css */
+.out-container{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+}
+.main-container{
+  width: 55vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  isolation: isolate;
+  border-radius: 10px;
+
+}
+.main-container::after{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.6;
+ background-color: black;
+ border-radius: 10px;
+ 
+}
+
+/*Logo box css*/
+.logo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  font-family: 'Comfortaa', cursive;
+  color: white;
+  margin-right: 30px;
+}
+.logo-container h2{
+  color: rgb(250, 206, 47);
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+#logo{
+  width: 40px;
+  height: auto;
+  margin-bottom: 25px;
+  margin-right: 5px;
+}
+
+/* Search css */
+.search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.search-box{
+  width: 250px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: Manrope;
+}
+.btn{
+  border: 0px;
+}
+.btn:hover{
+  cursor: pointer;
+}
+
+/*Data container css*/
+.outer-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 55vh;
+  color: white;
+}
+.data-weather{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: Manrope;
+}
+.data-temp{
+  font-family: Manrope;
+  width: 20vw;
+  text-align: center;
+}
+.temp{
+  font-size: 90px;
+}
+.data-icon{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-time{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  margin-left: 10px;
+  color: white;
+  font-family: Manrope;
+}
+.date{
+  font-size: 40px;
+
+}
+.time{
+  font-size: 25px;
+}
+.data{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+.humidity-pressure,.wind-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 40vh;
+  font-size: 18px;
+}
+.data-humidity,.data-pressure, .data-speed, .data-direction{
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+i{
+  height: 18px;
+  width: 18px;
+  margin: 5px 5px;
+}
+.icon-desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Footer css*/
+#footer-container{
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  color: gray;
+  margin-top: 15px;
+}
