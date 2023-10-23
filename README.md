@@ -18,6 +18,7 @@ This Weather App is a simple web application built with React.js that provides r
 ## Getting Started
 
 1. Clone the repository.
-2. Obtain an OpenWeather API key and add it to `src/config.js`.
-3. Install dependencies with `npm install`.
-4. Run the app with `npm start`.
+2. Install dependencies with `npm install`.
+3. Run the app with `npm start`.
+
+Make Note: The OpenWeather API Key is available in Tempdata.js in the components folder. Please do not make another config.js folder to add another API key. 
