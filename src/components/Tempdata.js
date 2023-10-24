@@ -13,6 +13,7 @@ function Tempdata(props){
     const [timestamp, setTimestamp]=useState();
     const [timezone, setTimezone]=useState();
     const [wind, setWind]=useState([]);
+    const [feels, setFeels]=useState()
     const fetchData=async()=>{
         try{
        await axios.get(baseURL).then((res)=>{
@@ -23,6 +24,7 @@ function Tempdata(props){
         setTimestamp(res.data.dt);
         setTimezone(res.data.timezone);
         setWind(res.data.wind);
+        setFeels(res.data.main.feels_like);
        });
     }
     catch(err){
@@ -37,7 +39,7 @@ function Tempdata(props){
     
     return(
         
-        <Templayout temp1={temp} weather1={weather} city1={city} country1={country} timestamp1={timestamp} timezone1={timezone} wind1={wind}></Templayout>
+        <Templayout temp1={temp} weather1={weather} city1={city} country1={country} timestamp1={timestamp} timezone1={timezone} wind1={wind} feels={feels}></Templayout>
     );
 }
 
