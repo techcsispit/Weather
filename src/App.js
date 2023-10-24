@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Search from "./components/Search"
+import Search from "./components/Search";
 import Tempdata from "./components/Tempdata";
 import Footer from "./components/Footer";
 import logo from "./images/weather-logo.png";
+
 
 function App() {
   const [city, setCity] = useState("");

@@ -1,11 +1,10 @@
 import morning from "./images/morning.jpg";
 import afternoon from "./images/afternoon2.jpg";
-import evening from "./images/evening.jpg";
+import evening from "./images/evening.gif";
 import night from "./images/night.jpg";
 
 let hours = new Date().getHours();
 setTimeout(() => { Bgchange(hours); }, 10);
-
 
 function Bgchange(hours) {
     setTimeout(() => {
@@ -19,6 +18,9 @@ function Bgchange(hours) {
             bgimage.style.backgroundImage = `url(${evening})`;
         else
             bgimage.style.backgroundImage = `url(${night})`;
+
+        bgimage.style.transition = "background-image 1s ease-in-out";
     }, 2);
 }
+
 export default Bgchange;
