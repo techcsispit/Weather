@@ -4,7 +4,6 @@
 *{
   margin: 0px;
   padding: 0px;
-  
 }
 /* Outer box css */
 .out-container{
@@ -15,6 +14,7 @@
   align-items: center;
   justify-content: center;
  flex-direction: column;
+ transition: background-color 0.5s ease;
 }
 .main-container{
   width: 55vw;
@@ -27,7 +27,7 @@
   background-position: center;
   position: relative;
   isolation: isolate;
-  border-radius: 10px;
+  border-radius: 50px;
 
 }
 .main-container::after{
@@ -37,7 +37,7 @@
   inset: 0;
   opacity: 0.6;
  background-color: black;
- border-radius: 10px;
+ border-radius: 50px;
  
 }
 
@@ -70,14 +70,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  color:#1f1f1f
 }
 .search-box{
-  width: 250px;
-  height: 30px;
+  width: 400px;
+  height: 50px;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 18px;
   font-family: Manrope;
+  color:#1f1f1f
 }
 .btn{
   border: 0px;
@@ -173,4 +175,43 @@ i{
   text-align: center;
   color: gray;
   margin-top: 15px;
+}
+
+/*Dark mode css*/
+
+.dark-mode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Manrope;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode .out-container {
+  background-color: #1f1f1f;
+  transition: background-color 0.5s ease;
+}
+
+.dark-mode .search-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+   
+  transition: background-color 0.5s ease;
+}
+.dark-mode .search-box{
+  width: 400px;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: Manrope;
+  color: white;
+  background-color: black; 
+  transition: background-color 0.5s ease;
 }

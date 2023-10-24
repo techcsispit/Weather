@@ -4,9 +4,10 @@ import Tempdata from "./components/Tempdata";
 import logo from "./weather-logo.png";
 import Footer from "./components/Footer";
 
+
 function App() {
   const [city, setCity]=useState("");
-
+  
   function setCityInput(cityinput){
     setCity(cityinput);
    
