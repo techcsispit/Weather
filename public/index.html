@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-   
-    <title>WeatherWand</title>
-    <style>
-      .dark-mode-button {
-        background-color: #1f1f1f;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 200px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: fixed;
-        z-index: 9999;
-        top: 55px;
-        right: 450px;
-      }
 
-      
-    </style>
-  </head>
-  <body>
-    <div style="display: flex; align-items: center;">
-      <link rel="icon" href="./favicon.png" />
-      <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
-    </div>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    
-    <div id="root"></div>
-    <script>
-      const toggleDarkMode = () => {
-          const body = document.body;
-          body.classList.toggle("dark-mode");
-      };
-    </script>
-    
-    <script src="https://kit.fontawesome.com/d2f1df378d.js" crossorigin="anonymous"></script>
-    <script src="../src/bgchangescript.js"></script>
-  </body>
-  
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/images/weather.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+
+  <title>WeatherWand</title>
+  <style>
+    .dark-mode-button {
+      background-color: #1f1f1f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 200px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: fixed;
+      z-index: 9999;
+      top: 55px;
+      right: 450px;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; align-items: center;">
+    <link rel="icon" href="./favicon.png" />
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
+  </div>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <div id="root"></div>
+  <script>
+    const toggleDarkMode = () => {
+      const body = document.body;
+      body.classList.toggle("dark-mode");
+    };
+  </script>
+
+  <script src="https://kit.fontawesome.com/d2f1df378d.js" crossorigin="anonymous"></script>
+  <script src="../src/bgchangescript.js"></script>
+</body>
+
 </html>
