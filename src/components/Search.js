@@ -17,7 +17,7 @@ function Search(props) {
     
     return (
         <div className="search-container">
-            <input type="search" className="search-box" placeholder="Enter city" onChange={handleChange} value={cityinput} onKeyDown={checkKey}></input>
+            <input className="search-box" placeholder="Enter city" onChange={handleChange} value={cityinput} onKeyDown={checkKey}></input>
             <div className="btn" onClick={()=>{
                 
                 props.sendCity(cityinput)
