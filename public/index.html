@@ -30,15 +30,21 @@
 <body>
   <div style="display: flex; align-items: center;">
     <link rel="icon" href="./favicon.png" />
-    <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">☾</button>
   </div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
 
   <div id="root"></div>
   <script>
+    let darkModeContent = document.querySelector(".dark-mode-button");
     const toggleDarkMode = () => {
       const body = document.body;
       body.classList.toggle("dark-mode");
+      if (darkModeContent.textContent === "☀︎") {
+        darkModeContent.textContent = "☾";
+      } else {
+        darkModeContent.textContent = "☀︎";
+      }
     };
   </script>
 
