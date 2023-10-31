@@ -30,7 +30,7 @@
 <body>
   <div style="display: flex; align-items: center;">
     <link rel="icon" href="./favicon.png" />
-    <button class="dark-mode-button" onclick="toggleDarkMode()">☾</button>
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Dark ☾</button>
   </div>
   <noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -40,10 +40,10 @@
     const toggleDarkMode = () => {
       const body = document.body;
       body.classList.toggle("dark-mode");
-      if (darkModeContent.textContent === "☀︎") {
-        darkModeContent.textContent = "☾";
+      if (darkModeContent.textContent === "Light ☀︎") {
+        darkModeContent.textContent = "Dark ☾";
       } else {
-        darkModeContent.textContent = "☀︎";
+        darkModeContent.textContent = "Light ☀︎";
       }
     };
   </script>
